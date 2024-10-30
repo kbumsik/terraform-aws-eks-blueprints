@@ -42,6 +42,7 @@ data "aws_iam_policy_document" "aws_lb" {
       "elasticloadbalancing:DescribeTargetHealth",
       "elasticloadbalancing:DescribeTags",
       "elasticloadbalancing:DescribeTrustStores",
+      "elasticloadbalancing:DescribeListenerAttributes",
     ]
   }
 
@@ -238,6 +239,7 @@ data "aws_iam_policy_document" "aws_lb" {
       "elasticloadbalancing:ModifyTargetGroup",
       "elasticloadbalancing:ModifyTargetGroupAttributes",
       "elasticloadbalancing:DeleteTargetGroup",
+      "elasticloadbalancing:ModifyListenerAttributes"
     ]
 
     condition {
